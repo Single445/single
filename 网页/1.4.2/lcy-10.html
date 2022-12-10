@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head>
+
+<body>
+<form>
+  <p>知识点10</p>
+  <p>单行文本域<br/>
+    <input type="text" name="kb" size=26 value="单行文本域是指用户输入的信息原样显示" /><br/>
+    密码文本域<br/>指用户输入的信息以“.”形式显示<br/>
+    <input name="密码" type="password" value="123456"/>
+    <br/>多行文本域<br/>输入的信息可以是多行，一般用于简介、留言等选项<br/>
+    <textarea name="多行文本框" cols="16" rows="3"></textarea>
+    <br/>单选按钮<br/>只允许选区一项，一般用于性别等选项<br/><input name="sex" type="radio" value="male" checked/>
+    male
+    <input name="sex" type="radio" value="female" />
+    female<br/>
+    复选框<br/>可以多项选取，一般用于爱好、特长等选项<br/>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" name="复选框" value="A" id="复选框_0" />
+    A</label>
+    <br />
+    <label>
+      <input type="checkbox" name="复选框" value="B" id="复选框_1" />
+      B</label>
+    <br />
+  </p>
+  <p>菜单域</p>
+  <p>可提供让浏览者在给出的菜单中作一个选择，如籍贯、类别、日期、学历等<br/>
+    <select name="菜单项" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+  <br/>滚动菜单<br/>
+    <select name="菜单名称"size="2" id="select">
+      <option>滚动菜单：提供一个带滚动条的菜单</option>
+      <option>此处为菜单中的第二个值</option>
+      <option>此处为菜单中的第三个值</option>
+      <option>每一个值均位于option标签之间</option>
+    </select>
+  <br/>提交按钮</p>
+  <p>把所输入的内容提交给相关程序，让服务器对其进行处理<br/>
+    <input name="密码" type="password"/><input name="" type="submit" value="提交" />
+  <br/>重置按钮</p>
+  <p>把刚输入的内容清除，重新输入<br/>
+    <input name="密码" type="password" /><input name="名称" type="reset" value="重置" />
+  </p>
+</form>
+</body>
+</html>
